@@ -1,10 +1,10 @@
 public class Canis implements AnimalKingdom  {
 	static String Genus="Canis";
 	String Subclass;
-    String CommonName;
+    	String CommonName;
 	String habitat;
-    double lifeSpan;
-	double populationStatus;
+    	String lifeSpan;
+	String populationStatus;
 	String IUCNstatus;
 	
 	public Canis(){
