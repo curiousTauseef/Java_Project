@@ -29,10 +29,10 @@ class Project_main
                 System.out.println("4.Ursus");
                 System.out.println("5.Bos");
                 
-                int o2=in.nextInt();
-                switch (o2) 
-                { 
-                    case 1: 
+                int o1=in.nextInt();
+                switch (o1) 
+                 { 
+                    case 1:
                         System.out.println("Enter the Scientific Name: ");
                         String p1=in.nextLine();
                         System.out.println("Enter its habitat:");
@@ -45,7 +45,7 @@ class Project_main
                         String p5=in.nextLine()
                         Panthera.add(new Panthera(p1,p2,p3,p4,p5));
                         break; 
-                    case 2: 
+                    case 2:
                         System.out.println("Enter the Scientific Name: ");
                         String m1=in.nextLine();
                         System.out.println("Enter its habitat:");
@@ -84,7 +84,7 @@ class Project_main
                         String u5=in.nextLine();
                         Ursus.add(new Ursus(u1,u2,u3,u4,u5));  
                         break;
-                    case 5: 
+                    case 5:
                         System.out.println("Enter the Scientific Name: ");
                         String b1=in.nextLine();
                         System.out.println("Enter its habitat:");
@@ -100,18 +100,47 @@ class Project_main
                     default: 
                         System.out.println("Choose a valid option please."); 
                         break; 
-                } 
+                 } 
                 
-                break; 
+            break; 
             case 2: //EDIT
-                edit
-                break; 
-            case 3: //DELETE
-                dayString = "Wednesday"; 
-                break; 
-            case 4: //DISPLAY
                 
-                break; 
+            case 3: //DELETE
+                System.out.println("Choose the genus: ");
+                System.out.println("1.Panthera");
+                System.out.println("2.Macaca");
+                System.out.println("3.Canis");
+                System.out.println("4.Ursus");
+                System.out.println("5.Bos");
+                
+                int o3=in.nextInt();
+                switch (o3) 
+                 { 
+                    case 1:
+                        Panthera.remove();
+                        break; 
+                    case 2:
+                        Macaca.remove();
+                        break; 
+                    case 3:
+                        Canis.remove(); 
+                        break; 
+                    case 4:
+                        Ursus.remove();  
+                        break;
+                    case 5:
+                        Bos.remove(); 
+                        break; 
+                    default:
+                        System.out.println("Please choose a valid option."); 
+                        break; 
+                 } 
+                break;  
+            case 4: //SEARCH & DISPLAY
+                
+                       
+            
+                
             default: 
                 System.out.println("Choose a valid option please."); 
                 break; 
