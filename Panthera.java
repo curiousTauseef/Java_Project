@@ -1,29 +1,27 @@
-
 public class Panthera implements AnimalKingdom  {
 	static String Genus="Panthera";
 	String Subclass;
-    	String CommonName;
+    String CommonName;
 	String habitat;
-    	double lifeSpan;
+    double lifeSpan;
 	double populationStatus;
 	String IUCNstatus;
 	
-	  public Panthera()
-	    {
-	        Genus="Panthera";
-	        Subclass="default";
-	        CommonName="default";
-	        habitat="default";
-	        lifeSpan = 0;
-	        populationStatus = 0;
-	        IUCNstatus="default";
-	    } 
+	public Panthera(){
+	    Genus="Panthera";
+	    Subclass="default";
+        CommonName="default";
+        habitat="default";
+	    lifeSpan = 0;
+	    populationStatus = 0;
+        IUCNstatus="default";
+	} 
 
- public Panthera(String s1 , String s2, String s3, String s4, String s5, String s6) {
+ 	public Panthera(String s1 , String s2, String s3, String s4, String s5, String s6) {
 		Subclass=s1;
 		CommonName=s2;
 		habitat=s3;
-	    	lifeSpan =s4;
+	    lifeSpan =s4;
 		populationStatus = s5;
 		IUCNstatus = s6;
 	}
@@ -35,14 +33,14 @@ public class Panthera implements AnimalKingdom  {
 		System.out.println("Life Span:"+lifeSpan);
 		System.out.println("Population Status:"+populationStatus);
 		System.out.println("IUCN Status:"+IUCNstatus);
-
 	}
-	public void EditDetails(String s1, String s2, String s3, double d1, double d2 , String s4) {
+	
+	public void EditDetails(String s1, String s2, String s3, String s4, String s5 , String s6) {
 		Subclass = s1;
 		CommonName=s2;
-	    	habitat = s3;
-		lifeSpan = d1;
-		populationStatus = d2;
-		IUCNstatus = s4;
+	    habitat = s3;
+		lifeSpan = s4;
+		populationStatus = s5;
+		IUCNstatus = s6;
 		}
 }
