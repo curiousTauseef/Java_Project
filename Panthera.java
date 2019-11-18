@@ -3,8 +3,8 @@ public class Panthera implements AnimalKingdom  {
 	String Subclass;
     String CommonName;
 	String habitat;
-    double lifeSpan;
-	double populationStatus;
+    String lifeSpan;
+	String populationStatus;
 	String IUCNstatus;
 	
 	public Panthera(){
